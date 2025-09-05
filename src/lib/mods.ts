@@ -126,5 +126,14 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 4,
     gameUrl: 'https://fnf.kdata1.com/mario-ultra-rebooted/1/',
+  },
+  {
+    id: 'dave-and-bambi',
+    title: 'Dave & Bambi',
+    description: 'An expansive mod featuring the characters Dave and Bambi with a unique 3D art style.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/4/40/DaveandBambi3.0banner.jpg/revision/latest/scale-to-width-down/536?cb=20221001163538',
+    difficulty: 'Insane',
+    songs: 32,
+    gameUrl: 'https://fnf.kdata1.com/dave-bambi/32/',
   }
 ];
