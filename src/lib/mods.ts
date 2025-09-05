@@ -33,12 +33,12 @@ export const mods: Mod[] = [
     songs: 5,
   },
   {
-    id: 'smoke-em-out-struggle',
-    title: 'Smoke \'Em Out Struggle',
-    description: 'A chill and emotional week with Garcello, a mysterious smoker with a sad story.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/608d01f6067c8.jpg',
-    difficulty: 'Easy',
-    songs: 4,
+    id: 'hazy-river',
+    title: 'Hazy River',
+    description: 'A full-week mod that remasters the original Garcello and Annie mods with new songs, art, and story.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/626efdcd46c73.jpg',
+    difficulty: 'Normal',
+    songs: 8,
   },
   {
     id: 'mid-fight-masses',
