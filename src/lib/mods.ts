@@ -5,6 +5,7 @@ export type Mod = {
   imageUrl: string;
   difficulty: 'Easy' | 'Normal' | 'Hard' | 'Insane';
   songs: number;
+  buildType?: string;
 };
 
 export const mods: Mod[] = [
@@ -39,6 +40,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/626efdcd46c73.jpg',
     difficulty: 'Normal',
     songs: 8,
+    buildType: 'Remaster',
   },
   {
     id: 'mid-fight-masses',
