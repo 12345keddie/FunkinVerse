@@ -60,7 +60,7 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
               {isClient ? (
                 <iframe
                   src={mod.gameUrl}
-                  className="absolute top-0 left-0 w-full h-full border-0"
+                  className="absolute top-0 left-0 w-full h-full border-0 block m-0"
                   allow="fullscreen"
                   title={`Play ${mod.title}`}
                 ></iframe>
