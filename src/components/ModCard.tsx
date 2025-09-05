@@ -26,8 +26,6 @@ export function ModCard({ mod, isFavorite, onToggleFavorite }: ModCardProps) {
             fill
             className="object-cover group-hover:opacity-80 transition-opacity"
             data-ai-hint="game character"
-            width={400}
-            height={225}
           />
         </div>
       </CardHeader>
