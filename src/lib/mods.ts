@@ -12,7 +12,7 @@ export const mods: Mod[] = [
     id: 'vs-whitty',
     title: 'V.S. Whitty',
     description: 'Face off against the short-fused rockstar, Whitty, in this explosive musical showdown.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/6033c73809968.jpg',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/602ad2dd9c20e.jpg',
     difficulty: 'Hard',
     songs: 3,
   },
