@@ -106,7 +106,7 @@ export const mods: Mod[] = [
   },
   {
     id: 'sonic-exe-rewrite-v2',
-    title: 'Sonic.exe Rewrite V2',
+    title: 'Rewrite: Round 2',
     description: 'A massive fan-made overhaul of the original Sonic.exe mod, with new songs, characters, and story.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/684981c1d25d1.jpg',
     difficulty: 'Insane',
