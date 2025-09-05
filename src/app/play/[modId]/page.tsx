@@ -1,15 +1,27 @@
+'use client';
+
+import { useRef } from 'react';
 import { mods } from '@/lib/mods';
 import { Header } from '@/components/Header';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Expand } from 'lucide-react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
 export default function PlayModPage({ params }: { params: { modId: string } }) {
   const { modId } = params;
   const mod = mods.find(m => m.id === modId);
+  const gameContainerRef = useRef<HTMLDivElement>(null);
+
+  const handleFullScreen = () => {
+    if (gameContainerRef.current) {
+      gameContainerRef.current.requestFullscreen().catch(err => {
+        console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+      });
+    }
+  };
 
   if (!mod) {
     notFound();
@@ -19,18 +31,26 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto py-8 px-6 flex flex-col">
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-between items-center mb-4 gap-4">
           <h1 className="text-3xl font-headline font-bold text-primary">{mod.title}</h1>
-          <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-            <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Browser
-            </Link>
-          </Button>
+          <div className="flex items-center gap-2">
+            {mod.gameUrl && (
+              <Button onClick={handleFullScreen} variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+                <Expand className="mr-2 h-4 w-4" />
+                Fullscreen
+              </Button>
+            )}
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
+              <Link href="/">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Browser
+              </Link>
+            </Button>
+          </div>
         </div>
         <Card className="flex-grow bg-black/50 border-2 border-dashed border-primary/50 rounded-lg flex items-center justify-center text-center p-8 flex-col text-muted-foreground">
           {mod.gameUrl ? (
-            <div className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
+            <div ref={gameContainerRef} className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
               <iframe
                 src={mod.gameUrl}
                 className="absolute top-0 left-0 w-full h-full border-0"
