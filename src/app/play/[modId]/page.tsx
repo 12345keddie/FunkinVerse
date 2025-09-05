@@ -1,12 +1,12 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { mods } from '@/lib/mods';
 import { Header } from '@/components/Header';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Expand } from 'lucide-react';
+import { ArrowLeft, Expand, Loader } from 'lucide-react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
@@ -14,6 +14,12 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
   const { modId } = params;
   const mod = mods.find(m => m.id === modId);
   const gameContainerRef = useRef<HTMLDivElement>(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // This will only run on the client, after the initial render.
+    setIsClient(true);
+  }, []);
 
   const handleFullScreen = () => {
     if (gameContainerRef.current) {
@@ -51,12 +57,19 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
         <Card className="flex-grow bg-black/50 border-2 border-dashed border-primary/50 rounded-lg flex items-center justify-center text-center p-8 flex-col text-muted-foreground">
           {mod.gameUrl ? (
             <div ref={gameContainerRef} className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
-              <iframe
-                src={mod.gameUrl}
-                className="absolute top-0 left-0 w-full h-full border-0"
-                allow="fullscreen"
-                title={`Play ${mod.title}`}
-              ></iframe>
+              {isClient ? (
+                <iframe
+                  src={mod.gameUrl}
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  allow="fullscreen"
+                  title={`Play ${mod.title}`}
+                ></iframe>
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full">
+                  <Loader className="h-8 w-8 animate-spin text-primary mb-4" />
+                  <p>Loading Game...</p>
+                </div>
+              )}
             </div>
           ) : (
             <>
