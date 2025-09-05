@@ -14,11 +14,11 @@ export const mods: Mod[] = [
   {
     id: 'vs-whitty',
     title: 'V.S. Whitty',
-    description: 'Face off against the short-fused rockstar, Whitty, in this explosive musical showdown.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/602ad2dd9c20e.jpg',
+    description: 'The definitive edition of the iconic V.S. Whitty mod, packed with new content and polish.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/530-90_61f9bf6a4abea.jpg',
     difficulty: 'Hard',
-    songs: 3,
-    gameUrl: 'https://fnf.run3.io/whitty/5/',
+    songs: 5,
+    gameUrl: 'https://fnf.kdata1.com/whitty-definitive-edition/1.5/',
   },
   {
     id: 'the-tricky-mod',
@@ -116,14 +116,5 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/684981c1d25d1.jpg',
     difficulty: 'Insane',
     songs: 4,
-  },
-  {
-    id: 'vs-whitty-definitive',
-    title: 'V.S. Whitty - Definitive Edition',
-    description: 'The definitive edition of the iconic V.S. Whitty mod, packed with new content and polish.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/61c168233932e.jpg',
-    difficulty: 'Hard',
-    songs: 5,
-    gameUrl: 'https://fnf.kdata1.com/whitty-definitive-edition/1.5/',
   },
 ];
