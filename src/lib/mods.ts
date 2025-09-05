@@ -117,4 +117,13 @@ export const mods: Mod[] = [
     difficulty: 'Insane',
     songs: 4,
   },
+  {
+    id: 'vs-whitty-definitive',
+    title: 'V.S. Whitty - Definitive Edition',
+    description: 'The definitive edition of the iconic V.S. Whitty mod, packed with new content and polish.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/61c168233932e.jpg',
+    difficulty: 'Hard',
+    songs: 5,
+    gameUrl: 'https://fnf.kdata1.com/whitty-definitive-edition/1.5/',
+  },
 ];
