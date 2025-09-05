@@ -24,7 +24,7 @@ export const mods: Mod[] = [
     id: 'the-tricky-mod',
     title: 'The Tricky Mod',
     description: 'Battle the chaotic and reality-bending clown, Tricky, in a high-octane FNF mod.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/6075a6c334923.jpg',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60b7d8741ac99.jpg',
     difficulty: 'Insane',
     songs: 4,
   },
