@@ -18,7 +18,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/602ad2dd9c20e.jpg',
     difficulty: 'Hard',
     songs: 3,
-    gameUrl: 'https://kbhgames.com/game/friday-night-funkin-v-s-whitty-full-week',
+    gameUrl: 'https://fnf.run3.io/whitty/5/',
   },
   {
     id: 'the-tricky-mod',
