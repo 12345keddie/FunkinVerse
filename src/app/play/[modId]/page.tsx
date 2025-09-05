@@ -10,8 +10,7 @@ import { ArrowLeft, Expand } from 'lucide-react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
-export default function PlayModPage({ params }: { params: { modId: string } }) {
-  const { modId } = params;
+export default function PlayModPage({ params: { modId } }: { params: { modId: string } }) {
   const mod = mods.find(m => m.id === modId);
   const gameContainerRef = useRef<HTMLDivElement>(null);
 
