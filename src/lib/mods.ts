@@ -85,7 +85,6 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/e/ed/Indie_Cross_New_Banner.png/revision/latest/scale-to-width-down/536?cb=20220415010428',
     difficulty: 'Insane',
     songs: 22,
-    gameUrl: 'https://kdata1.com/5000/2025/indiecross3/',
   },
   {
     id: 'doki-doki-takeover',
