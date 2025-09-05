@@ -29,19 +29,32 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
           </Button>
         </div>
         <Card className="flex-grow bg-black/50 border-2 border-dashed border-primary/50 rounded-lg flex items-center justify-center text-center p-8 flex-col text-muted-foreground">
-          <p className="text-2xl font-bold mb-4">Mod Launcher</p>
-          <div className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
-            <Image
-              src={mod.imageUrl}
-              alt={`Gameplay of ${mod.title}`}
-              fill
-              className="object-cover opacity-30"
-              data-ai-hint="gameplay screenshot"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-xl backdrop-blur-sm bg-black/30 p-4 rounded-md">The mod "{mod.title}" would load and be playable here.</p>
+          {mod.gameUrl ? (
+            <div className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
+              <iframe
+                src={mod.gameUrl}
+                className="absolute top-0 left-0 w-full h-full border-0"
+                allow="fullscreen"
+                title={`Play ${mod.title}`}
+              ></iframe>
             </div>
-          </div>
+          ) : (
+            <>
+              <p className="text-2xl font-bold mb-4">Mod Launcher</p>
+              <div className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
+                <Image
+                  src={mod.imageUrl}
+                  alt={`Gameplay of ${mod.title}`}
+                  fill
+                  className="object-cover opacity-30"
+                  data-ai-hint="gameplay screenshot"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-xl backdrop-blur-sm bg-black/30 p-4 rounded-md">A playable version of "{mod.title}" is not available yet.</p>
+                </div>
+              </div>
+            </>
+          )}
         </Card>
       </main>
     </div>

@@ -6,6 +6,7 @@ export type Mod = {
   difficulty: 'Easy' | 'Normal' | 'Hard' | 'Insane';
   songs: number;
   buildType?: string;
+  gameUrl?: string;
 };
 
 export const mods: Mod[] = [
