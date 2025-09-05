@@ -44,6 +44,7 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 8,
     buildType: 'Remaster',
+    gameUrl: 'https://fnf.kdata1.com/hazy-river-vs-garcello-annie/1/',
   },
   {
     id: 'mid-fight-masses',
