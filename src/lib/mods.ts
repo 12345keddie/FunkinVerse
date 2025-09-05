@@ -80,7 +80,7 @@ export const mods: Mod[] = [
     description: 'A massive crossover mod featuring characters from Cuphead, Undertale, and Bendy.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/625fd7546a8c4.jpg',
     difficulty: 'Insane',
-    songs: 9,
+    songs: 22,
   },
   {
     id: 'doki-doki-takeover',
