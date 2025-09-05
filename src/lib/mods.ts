@@ -1,3 +1,4 @@
+
 export type Mod = {
   id: string;
   title: string;
@@ -17,6 +18,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/602ad2dd9c20e.jpg',
     difficulty: 'Hard',
     songs: 3,
+    gameUrl: 'https://kbhgames.com/game/friday-night-funkin-v-s-whitty-full-week',
   },
   {
     id: 'the-tricky-mod',
