@@ -36,8 +36,6 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
               fill
               className="object-cover opacity-30"
               data-ai-hint="gameplay screenshot"
-              width={1280}
-              height={720}
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="text-xl backdrop-blur-sm bg-black/30 p-4 rounded-md">The mod "{mod.title}" would load and be playable here.</p>
