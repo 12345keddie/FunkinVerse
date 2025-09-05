@@ -8,7 +8,8 @@ import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
 export default function PlayModPage({ params }: { params: { modId: string } }) {
-  const mod = mods.find(m => m.id === params.modId);
+  const { modId } = params;
+  const mod = mods.find(m => m.id === modId);
 
   if (!mod) {
     notFound();
