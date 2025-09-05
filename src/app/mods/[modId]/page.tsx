@@ -56,11 +56,11 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
         </div>
         <Card className="flex-grow bg-black/50 border-2 border-dashed border-primary/50 rounded-lg flex items-center justify-center text-center p-8 flex-col text-muted-foreground">
           {mod.gameUrl ? (
-            <div ref={gameContainerRef} className="w-full aspect-video relative max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
+            <div ref={gameContainerRef} className="w-full h-full flex items-center justify-center max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
               {isClient ? (
                 <iframe
                   src={mod.gameUrl}
-                  className="absolute top-0 left-0 w-full h-full border-0 block m-0"
+                  className="w-full aspect-video border-0"
                   allow="fullscreen"
                   title={`Play ${mod.title}`}
                 ></iframe>
