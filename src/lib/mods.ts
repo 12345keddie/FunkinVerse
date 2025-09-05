@@ -78,7 +78,7 @@ export const mods: Mod[] = [
     id: 'indie-cross',
     title: 'Indie Cross',
     description: 'A massive crossover mod featuring characters from Cuphead, Undertale, and Bendy.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/625fd7546a8c4.jpg',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/e/ed/Indie_Cross_New_Banner.png/revision/latest/scale-to-width-down/536?cb=20220415010428',
     difficulty: 'Insane',
     songs: 22,
   },
