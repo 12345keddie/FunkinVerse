@@ -1,13 +1,13 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { getModRecommendations } from '@/lib/actions';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Wand2, Zap } from 'lucide-react';
-import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 const initialState = {
@@ -35,7 +35,7 @@ function SubmitButton() {
 }
 
 export function RecommendationForm() {
-  const [state, formAction] = useFormState(getModRecommendations, initialState);
+  const [state, formAction] = useActionState(getModRecommendations, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
