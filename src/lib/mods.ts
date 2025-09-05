@@ -117,4 +117,13 @@ export const mods: Mod[] = [
     difficulty: 'Insane',
     songs: 4,
   },
+  {
+    id: 'vs-mario-ultra-rebooted',
+    title: 'V.S. Mario Ultra Rebooted',
+    description: 'Take on Mario in this ultra-rebooted FNF mod with new songs and mechanics.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/649987f61403e.jpg',
+    difficulty: 'Hard',
+    songs: 4,
+    gameUrl: 'https://fnf.kdata1.com/mario-ultra-rebooted/1/',
+  }
 ];
