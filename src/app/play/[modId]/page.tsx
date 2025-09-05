@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, use } from 'react';
 import { mods } from '@/lib/mods';
 import { Header } from '@/components/Header';
 import { notFound } from 'next/navigation';
@@ -10,7 +10,8 @@ import { ArrowLeft, Expand, Loader } from 'lucide-react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
-export default function PlayModPage({ params: { modId } }: { params: { modId: string } }) {
+export default function PlayModPage({ params }: { params: { modId: string } }) {
+  const { modId } = use(params);
   const mod = mods.find(m => m.id === modId);
   const gameContainerRef = useRef<HTMLDivElement>(null);
   const [isClient, setIsClient] = useState(false);
