@@ -45,7 +45,7 @@ export function ModCard({ mod, isFavorite, onToggleFavorite }: ModCardProps) {
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between">
         <Button asChild size="sm" className="bg-primary hover:bg-primary/80 text-white font-bold">
-          <Link href={`/play/${mod.id}`}>
+          <Link href={`/mods/${mod.id}`}>
             <Play className="mr-2 h-4 w-4" /> Play
           </Link>
         </Button>
