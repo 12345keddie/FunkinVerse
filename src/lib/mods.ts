@@ -272,7 +272,7 @@ export const mods: Mod[] = [
     description: 'The ultimate test of skill against Matt.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/31/MattWiik100GameBanana.jpg/revision/latest/scale-to-width-down/536?cb=20210929191310',
     difficulty: 'Insane',
-    songs: 1,
+    songs: 3,
     gameUrl: 'https://fnf.kdata1.com/matt-wiik-1000/1/',
   },
   {
