@@ -255,7 +255,8 @@ export const mods: Mod[] = [
     description: 'Rozebud\'s take on the Wiik 4 challenge.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/18/WF4GBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230502145931',
     difficulty: 'Insane',
-    songs: 1,
+    songs: 6,
+    bonusSongs: 1,
     gameUrl: 'https://fnf.kdata1.com/wii-funkin-wiik-4-fanmade/1/',
   },
   {
