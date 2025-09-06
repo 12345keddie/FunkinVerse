@@ -6,6 +6,7 @@ export type Mod = {
   imageUrl: string;
   difficulty: 'Easy' | 'Normal' | 'Hard' | 'Insane';
   songs: number;
+  bonusSongs?: number;
   buildType?: string;
   gameUrl?: string;
 };
@@ -18,6 +19,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/71/WhittyWeek.jpg/revision/latest/scale-to-width-down/536?cb=20210217011836',
     difficulty: 'Hard',
     songs: 3,
+    bonusSongs: 1,
     gameUrl: 'https://fnf.run3.io/whitty/1/',
   },
   {
@@ -36,6 +38,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/60b7d8741ac99.jpg',
     difficulty: 'Insane',
     songs: 4,
+    bonusSongs: 1,
     gameUrl: 'https://fnf.run3.io/tricky2/4/',
   },
   {
@@ -282,3 +285,5 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/fever/1/',
   }
 ];
+
+    

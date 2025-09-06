@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, Play, Music, BarChart } from 'lucide-react';
+import { Heart, Play, Music, BarChart, Star } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -34,7 +34,7 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
       <CardContent className="p-4 flex-grow">
         <CardTitle className="text-lg font-bold text-primary truncate">{mod.title}</CardTitle>
         <CardDescription className="text-sm text-gray-400 h-10 overflow-hidden text-ellipsis mt-1">{mod.description}</CardDescription>
-        <div className="flex justify-between items-center mt-4 text-xs">
+        <div className="flex flex-wrap gap-2 items-center mt-4 text-xs">
           <Badge variant="secondary" className="bg-accent/20 text-accent border-accent/50">
             <BarChart className="w-3 h-3 mr-1" />
             {mod.difficulty}
@@ -43,6 +43,12 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
             <Music className="w-3 h-3 mr-1" />
             {mod.songs} {mod.songs === 1 ? 'Song' : 'Songs'}
           </Badge>
+          {mod.bonusSongs && mod.bonusSongs > 0 && (
+            <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-400 border-yellow-400/50">
+              <Star className="w-3 h-3 mr-1" />
+              {mod.bonusSongs} Bonus {mod.bonusSongs === 1 ? 'Song' : 'Songs'}
+            </Badge>
+          )}
         </div>
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between">
@@ -58,3 +64,5 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
     </Card>
   );
 }
+
+    
