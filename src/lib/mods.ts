@@ -75,6 +75,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.run3.io/tabi/5/',
   },
   {
+    id: 'tabi-revival',
+    title: 'Tabi Revival',
+    description: 'A revival of the classic Tabi mod.',
+    imageUrl: 'https://picsum.photos/400/225',
+    difficulty: 'Hard',
+    songs: 3,
+    gameUrl: 'https://fnf.kdata1.com/2025/tabi-revival/1/',
+  },
+  {
     id: 'starlight-mayhem',
     title: 'Starlight Mayhem',
     description: 'Rock out against CJ and his band.',
