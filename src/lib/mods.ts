@@ -35,6 +35,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/36/Hex_Mod_Full_Week.png/revision/latest?cb=20210222045517',
     difficulty: 'Normal',
     songs: 5,
+    gameUrl: 'https://fnf.kdata1.com/hex-weekend/2/',
   },
   {
     id: 'hazy-river',
