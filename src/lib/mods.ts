@@ -32,7 +32,7 @@ export const mods: Mod[] = [
     id: 'vs-hex',
     title: 'V.S. Hex',
     description: 'A match against a robot basketballer.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/da/Hexupdatebanner.png/revision/latest/scale-to-width-down/185?cb=20220104085525',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/da/Hexupdatebanner.png/revision/latest/scale-to-width-down/1000?cb=20220104085525',
     difficulty: 'Normal',
     songs: 5,
     gameUrl: 'https://fnf.kdata1.com/hex-weekend/2/',
