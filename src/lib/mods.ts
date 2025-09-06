@@ -20,7 +20,7 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 3,
     bonusSongs: 1,
-    gameUrl: 'https://fnf.run3.io/whitty/1/',
+    gameUrl: 'https://fnf.run3.io/whitty/5/',
   },
   {
     id: 'vs-whitty-definitive',
