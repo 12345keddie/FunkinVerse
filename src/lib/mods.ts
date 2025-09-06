@@ -141,7 +141,7 @@ export const mods: Mod[] = [
     id: 'entity',
     title: 'Friday Night Funkin\' Entity',
     description: 'A huge mod featuring AGOTI.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/0/03/Entity_Promo_Art.png/revision/latest?cb=20210815191023',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/4/4a/Fnfentityful.jpg/revision/latest?cb=20211204000308',
     difficulty: 'Hard',
     songs: 4,
   },
