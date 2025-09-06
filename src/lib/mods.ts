@@ -72,6 +72,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/9/9b/530-90_60a2714b4e6a0.jpg/revision/latest?cb=20210601073903',
     difficulty: 'Hard',
     songs: 3,
+    gameUrl: 'https://fnf.run3.io/tabi/5/',
   },
   {
     id: 'starlight-mayhem',
