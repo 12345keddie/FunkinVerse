@@ -236,7 +236,7 @@ export const mods: Mod[] = [
     description: 'A fan-made continuation of the Matt saga.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/5/53/WiiK3%2BGBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230426205750',
     difficulty: 'Insane',
-    songs: 50,
+    songs: 5,
     gameUrl: 'https://fnf.run3.io/matt-3-fanmade/3.1/',
   },
   {
@@ -245,7 +245,7 @@ export const mods: Mod[] = [
     description: 'The fan-made Wiik 4 with more intense challenges.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/18/Wiik4RemasterGBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230505174705',
     difficulty: 'Insane',
-    songs: 4,
+    songs: 50,
     gameUrl: 'https://fnf.run3.io/matt-wiik-4-fanmade/1/',
   },
   {
