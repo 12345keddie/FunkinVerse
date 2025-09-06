@@ -236,7 +236,7 @@ export const mods: Mod[] = [
     description: 'A fan-made continuation of the Matt saga.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/5/53/WiiK3%2BGBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230426205750',
     difficulty: 'Insane',
-    songs: 5,
+    songs: 9,
     gameUrl: 'https://fnf.run3.io/matt-3-fanmade/3.1/',
   },
   {
