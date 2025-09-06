@@ -292,6 +292,15 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 1,
     gameUrl: 'https://fnf.kdata1.com/rainbow-friends/1',
+  },
+  {
+    id: 'vs-blue',
+    title: 'V.S. Blue',
+    description: 'Take on Blue from the popular Roblox game Rainbow Friends.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/75/633763a85217d.jpg/revision/latest/scale-to-width-down/1000?cb=20221123150645',
+    difficulty: 'Normal',
+    songs: 1,
+    gameUrl: 'https://fnf.kdata1.com/roblox-rainbow-friends-vs-blue/1/',
   }
 ];
 
