@@ -15,7 +15,7 @@ export const mods: Mod[] = [
     id: 'vs-whitty',
     title: 'V.S. Whitty',
     description: 'Face off against the short-fused rock star, Whitty.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/7c/VsWhittyBanner.png/revision/latest?cb=20210224053733',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/71/WhittyWeek.jpg/revision/latest/scale-to-width-down/536?cb=20210217011836',
     difficulty: 'Hard',
     songs: 3,
     gameUrl: 'https://fnf.run3.io/whitty/1/',
