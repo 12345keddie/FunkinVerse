@@ -42,7 +42,7 @@ export const mods: Mod[] = [
     title: 'Hazy River',
     description: 'A Garcello and Annie mod remaster.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/626efdcd46c73.jpg',
-    difficulty: 'Normal',
+    difficulty: 'Hard',
     songs: 8,
     buildType: 'Remaster',
     gameUrl: 'https://fnf.kdata1.com/hazy-river-vs-garcello-annie/1/',
