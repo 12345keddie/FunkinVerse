@@ -170,7 +170,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/f/f9/Vs_Matt_Banner.png/revision/latest',
     difficulty: 'Insane',
     songs: 5,
-    gameUrl: 'https://fnf.kdata1.com/wii-funkin-vs-matt/2/',
+    gameUrl: 'https://run3.io/popgame/fnf/mattwii-2/?ddd',
   },
   {
     id: 'friday-night-fever',
