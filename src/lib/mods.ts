@@ -69,7 +69,7 @@ export const mods: Mod[] = [
     id: 'vs-tabi',
     title: 'V.S. Tabi',
     description: 'Face Girlfriend\'s vengeful ex.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/71/Tabi_in_Genocide.png/revision/latest?cb=20210603050849',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/9/9b/530-90_60a2714b4e6a0.jpg/revision/latest?cb=20210601073903',
     difficulty: 'Hard',
     songs: 3,
   },
