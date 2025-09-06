@@ -324,6 +324,33 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 3,
     gameUrl: 'https://fnf.run3.io/carol-and-whitty-date-week/1.1/',
+  },
+  {
+    id: 'vs-carol',
+    title: 'V.S. Carol v2',
+    description: 'A classic FNF mod featuring Carol.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/602a236b4b138.jpg',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://run3.io/popgame/fnf/fnf-ke131-carol-v2/',
+  },
+  {
+    id: 'golf-minigame',
+    title: 'Golf Minigame ft. Miku',
+    description: 'A unique golf-themed minigame mod.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60922b94cf2e6.jpg',
+    difficulty: 'Easy',
+    songs: 1,
+    gameUrl: 'https://fnf2.kdata1.com/golf-minigame-ft-miku/2/',
+  },
+  {
+    id: 'hellchart-carol',
+    title: 'V.S. Hellchart Carol',
+    description: 'An extra challenging version of the Carol mod.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60b825fc6c0b4.jpg',
+    difficulty: 'Insane',
+    songs: 1,
+    gameUrl: 'https://fnf.run3.io/hellchart-carol/1/',
   }
 ];
 
