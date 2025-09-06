@@ -197,6 +197,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/18/WF4GBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230502145931',
     difficulty: 'Insane',
     songs: 1,
+    gameUrl: 'https://fnf.kdata1.com/wii-funkin-wiik-4-fanmade/1/',
   },
   {
     id: 'matt-voiid-chronicles',
