@@ -290,7 +290,7 @@ export const mods: Mod[] = [
     description: 'Face off against the colorful characters from Rainbow Friends.',
     imageUrl: 'https://static.wikia.nocookie.net/9e029e1b-c4e9-4920-bb23-cbde1dd222c6/scale-to-width/755',
     difficulty: 'Normal',
-    songs: 3,
+    songs: 1,
     gameUrl: 'https://fnf.kdata1.com/rainbow-friends/1',
   }
 ];
