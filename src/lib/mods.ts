@@ -147,12 +147,13 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.run3.io/holofunk/2.2/',
   },
   {
-    id: 'rewrite-round-2',
-    title: 'Rewrite: Round 2',
-    description: 'Face a powerful code-altering EXE.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/684981c1d25d1.jpg',
+    id: 'vs-rewrite',
+    title: 'V.S. Rewrite',
+    description: 'Face off against the powerful Rewrite.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/38/RewriteBanner2.jpeg/revision/latest?cb=20230125055951',
     difficulty: 'Insane',
     songs: 4,
+    gameUrl: 'https://fnf.kdata1.com/rewrite-sonic-exe/1.2/',
   },
   {
     id: 'vs-mario-ultra-rebooted',
