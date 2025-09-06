@@ -112,7 +112,7 @@ export const mods: Mod[] = [
     songs: 20,
   },
   {
-    id: 'sonic-exe-rewrite-v2',
+    id: 'rewrite-round-2',
     title: 'Rewrite: Round 2',
     description: 'Face Rewrite, a powerful code-altering EXE.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/684981c1d25d1.jpg',
@@ -136,5 +136,37 @@ export const mods: Mod[] = [
     difficulty: 'Insane',
     songs: 32,
     gameUrl: 'https://fnf.kdata1.com/dave-bambi/32/',
+  },
+  {
+    id: 'vs-agoti',
+    title: 'V.S. AGOTI',
+    description: 'Face off against AGOTI, a screen demon.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/71/Vsagoti.png/revision/latest',
+    difficulty: 'Hard',
+    songs: 3,
+  },
+  {
+    id: 'vs-shaggy',
+    title: 'V.S. Shaggy',
+    description: 'Battle the legendary Shaggy Rogers.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/8/83/Shaggy_Mod_New_Banner.png/revision/latest',
+    difficulty: 'Insane',
+    songs: 7,
+  },
+  {
+    id: 'friday-night-fever',
+    title: 'Friday Night Fever',
+    description: 'A massive full-game overhaul mod.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a5/FNFever_Banner.png/revision/latest',
+    difficulty: 'Normal',
+    songs: 20,
+  },
+  {
+    id: 'smoke-em-out-struggle',
+    title: 'Smoke \'Em Out Struggle',
+    description: 'Face off against Garcello, a heavy smoker.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/0/07/GarcelloModBanner.png/revision/latest',
+    difficulty: 'Easy',
+    songs: 4,
   }
 ];
