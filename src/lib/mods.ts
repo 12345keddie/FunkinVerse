@@ -245,7 +245,8 @@ export const mods: Mod[] = [
     description: 'The fan-made Wiik 4 with more intense challenges.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/18/Wiik4RemasterGBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230505174705',
     difficulty: 'Insane',
-    songs: 50,
+    songs: 13,
+    bonusSongs: 32,
     gameUrl: 'https://fnf.run3.io/matt-wiik-4-fanmade/1/',
   },
   {
