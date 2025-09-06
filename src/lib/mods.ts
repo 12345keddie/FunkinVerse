@@ -300,6 +300,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/75/633763a85217d.jpg/revision/latest/scale-to-width-down/1000?cb=20221123150645',
     difficulty: 'Normal',
     songs: 1,
+    bonusSongs: 1,
     gameUrl: 'https://fnf.kdata1.com/roblox-rainbow-friends-vs-blue/1/',
   }
 ];
