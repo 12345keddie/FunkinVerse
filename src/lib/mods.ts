@@ -172,6 +172,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/dave-bambi/32/',
   },
   {
+    id: 'dave-and-bambi-golden-apple',
+    title: 'Dave & Bambi: Golden Apple',
+    description: 'A fan-made expansion to the Dave & Bambi mod.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/76/GappleBanner2.jpg/revision/latest/scale-to-width-down/1000?cb=20230214014136',
+    difficulty: 'Insane',
+    songs: 20,
+    gameUrl: 'https://fnf.kdata1.com/dave-bambi-golden-apple/1/',
+  },
+  {
     id: 'entity',
     title: 'Entity',
     description: 'A huge mod featuring AGOTI.',
