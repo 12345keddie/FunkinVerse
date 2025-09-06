@@ -227,5 +227,14 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 20,
     gameUrl: 'https://fnf.kdata1.com/fever/1/',
+  },
+  {
+    id: 'vs-selever',
+    title: 'V.S. Selever',
+    description: "Face off against Sarvente's non-canon son.",
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/0/00/Selever_Full_Week_Cutscenes_%2B_Dialogue_%2B_Endings_-_Friday_Night_Funkin%27_Mods.jpg/revision/latest?cb=20210403175825',
+    difficulty: 'Hard',
+    songs: 3,
+    gameUrl: 'https://fnf.run3.io/selever-full-week/1/',
   }
 ];
