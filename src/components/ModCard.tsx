@@ -19,13 +19,12 @@ export function ModCard({ mod, isFavorite, onToggleFavorite }: ModCardProps) {
   return (
     <Card className="bg-white/5 border-white/10 text-white overflow-hidden transform hover:scale-105 transition-transform duration-300 group shadow-lg hover:shadow-primary/20 flex flex-col">
       <CardHeader className="p-0">
-        <div className="relative w-full">
+        <div className="relative w-full aspect-square overflow-hidden">
           <Image
             src={mod.imageUrl}
             alt={mod.title}
-            width={536}
-            height={302}
-            className="object-cover group-hover:opacity-80 transition-opacity w-full h-auto"
+            fill
+            className="object-cover group-hover:opacity-80 transition-opacity"
             data-ai-hint="game character"
           />
         </div>
