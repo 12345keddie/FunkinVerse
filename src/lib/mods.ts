@@ -149,7 +149,7 @@ export const mods: Mod[] = [
     id: 'vs-shaggy',
     title: 'V.S. Shaggy',
     description: 'Battle the legendary Shaggy Rogers.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/8/83/Shaggy_Mod_New_Banner.png/revision/latest',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/3e/Shaggyupdate.png/revision/latest/scale-to-width-down/536?cb=20220118103721',
     difficulty: 'Insane',
     songs: 7,
   },
