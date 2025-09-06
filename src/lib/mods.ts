@@ -302,6 +302,15 @@ export const mods: Mod[] = [
     songs: 1,
     bonusSongs: 1,
     gameUrl: 'https://fnf.kdata1.com/roblox-rainbow-friends-vs-blue/1/',
+  },
+  {
+    id: 'sprunkin',
+    title: 'Sprunkin\'!',
+    description: 'A SpongeBob SquarePants themed mod that\'s ready for fun.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/658b451a25752.jpg',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.kdata1.com/sprunkin/1/',
   }
 ];
 
