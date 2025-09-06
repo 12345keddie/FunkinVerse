@@ -315,6 +315,15 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 3,
     gameUrl: 'https://fnf.kdata1.com/2024/sprunki-sprunkin/1/',
+  },
+  {
+    id: 'the-date-week',
+    title: 'The Date Week',
+    description: 'A chill date week with Carol and Whitty.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/d6/Vswhittydateweek.jpg/revision/latest?cb=20210721230355',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.run3.io/carol-and-whitty-date-week/1.1/',
   }
 ];
 
