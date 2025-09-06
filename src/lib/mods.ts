@@ -32,6 +32,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://run3.io/popgame/fnf/fnf-ke131-carol-v2/',
   },
   {
+    id: 'golf-minigame',
+    title: 'Golf Minigame ft. Miku',
+    description: 'A unique golf-themed minigame mod.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60922b94cf2e6.jpg',
+    difficulty: 'Easy',
+    songs: 1,
+    gameUrl: 'https://fnf2.kdata1.com/golf-minigame-ft-miku/2/',
+  },
+  {
     id: 'the-tricky-mod',
     title: 'The Tricky Mod',
     description: 'Battle the chaotic clown, Tricky.',
@@ -87,15 +96,6 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/kapi-arcade-showdown/2/',
   },
   {
-    id: 'vs-impostor',
-    title: 'V.S. Impostor',
-    description: 'Among Us comes to FNF!',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/4/48/63aa9e7414efa.jpg/revision/latest/scale-to-width-down/536?cb=20230104055956',
-    difficulty: 'Hard',
-    songs: 7,
-    gameUrl: 'https://fnf.kdata1.com/impostor-v4/1.5/',
-  },
-  {
     id: 'vs-shaggy',
     title: 'V.S. Shaggy',
     description: 'Battle the legendary Shaggy Rogers.',
@@ -112,6 +112,15 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 3,
     gameUrl: 'https://fnf.run3.io/selever-full-week/1/',
+  },
+  {
+    id: 'the-date-week',
+    title: 'The Date Week',
+    description: 'A chill date week with Carol and Whitty.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/d6/Vswhittydateweek.jpg/revision/latest?cb=20210721230355',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.run3.io/carol-and-whitty-date-week/1.1/',
   },
   {
     id: 'entity',
@@ -178,15 +187,6 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/hazy-river-vs-garcello-annie/1/',
   },
   {
-    id: 'vs-rainbow-friends',
-    title: 'V.S. Rainbow Friends',
-    description: 'Face off against the colorful characters from Rainbow Friends.',
-    imageUrl: 'https://static.wikia.nocookie.net/9e029e1b-c4e9-4920-bb23-cbde1dd222c6/scale-to-width/755',
-    difficulty: 'Normal',
-    songs: 1,
-    gameUrl: 'https://fnf.kdata1.com/rainbow-friends/1',
-  },
-  {
     id: 'dave-and-bambi',
     title: 'Dave & Bambi',
     description: 'A unique mod with a 3D art style.',
@@ -194,6 +194,15 @@ export const mods: Mod[] = [
     difficulty: 'Insane',
     songs: 32,
     gameUrl: 'https://fnf.kdata1.com/dave-bambi/32/',
+  },
+  {
+    id: 'vs-rainbow-friends',
+    title: 'V.S. Rainbow Friends',
+    description: 'Face off against the colorful characters from Rainbow Friends.',
+    imageUrl: 'https://static.wikia.nocookie.net/9e029e1b-c4e9-4920-bb23-cbde1dd222c6/scale-to-width/755',
+    difficulty: 'Normal',
+    songs: 1,
+    gameUrl: 'https://fnf.kdata1.com/rainbow-friends/1',
   },
   {
     id: 'vs-blue',
@@ -206,12 +215,21 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/roblox-rainbow-friends-vs-blue/1/',
   },
   {
+    id: 'vs-impostor',
+    title: 'V.S. Impostor',
+    description: 'Among Us comes to FNF!',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/4/48/63aa9e7414efa.jpg/revision/latest/scale-to-width-down/536?cb=20230104055956',
+    difficulty: 'Hard',
+    songs: 7,
+    gameUrl: 'https://fnf.kdata1.com/impostor-v4/1.5/',
+  },
+  {
     id: 'vs-rewrite',
     title: 'V.S. Rewrite',
     description: 'Face off against the powerful Rewrite.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/38/RewriteBanner2.jpeg/revision/latest?cb=20230125055951',
     difficulty: 'Insane',
-    songs: 4,
+    songs: 2,
     gameUrl: 'https://fnf.kdata1.com/rewrite-sonic-exe/1.2/',
   },
   {
@@ -281,6 +299,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/matt-voiid-sides/1/',
   },
   {
+    id: 'sprunkin',
+    title: 'Sprunkin\'!',
+    description: "Only for the Brainrotted",
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/16/Sprunkinthumnail.jpg/revision/latest/scale-to-width-down/1000?cb=20241015225512',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.kdata1.com/2024/sprunki-sprunkin/1/',
+  },
+  {
     id: 'vs-impostor-2025',
     title: 'V.S. Impostor (2025)',
     description: 'The 2025 edition of the Among Us FNF mod.',
@@ -297,15 +324,6 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 20,
     gameUrl: 'https://fnf.run3.io/holofunk/2.2/',
-  },
-  {
-    id: 'the-date-week',
-    title: 'The Date Week',
-    description: 'A chill date week with Carol and Whitty.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/d6/Vswhittydateweek.jpg/revision/latest?cb=20210721230355',
-    difficulty: 'Normal',
-    songs: 3,
-    gameUrl: 'https://fnf.run3.io/carol-and-whitty-date-week/1.1/',
   },
   {
     id: 'vs-matt-wiik100',
@@ -326,24 +344,6 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/fever/1/',
   },
   {
-    id: 'sprunkin',
-    title: 'Sprunkin\'!',
-    description: "Only for the Brainrotted",
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/16/Sprunkinthumnail.jpg/revision/latest/scale-to-width-down/1000?cb=20241015225512',
-    difficulty: 'Normal',
-    songs: 3,
-    gameUrl: 'https://fnf.kdata1.com/2024/sprunki-sprunkin/1/',
-  },
-  {
-    id: 'golf-minigame',
-    title: 'Golf Minigame ft. Miku',
-    description: 'A unique golf-themed minigame mod.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60922b94cf2e6.jpg',
-    difficulty: 'Easy',
-    songs: 1,
-    gameUrl: 'https://fnf2.kdata1.com/golf-minigame-ft-miku/2/',
-  },
-  {
     id: 'hellchart-carol',
     title: 'V.S. Hellchart Carol',
     description: 'An extra challenging version of the Carol mod.',
@@ -354,4 +354,5 @@ export const mods: Mod[] = [
   }
 ];
 
+    
     
