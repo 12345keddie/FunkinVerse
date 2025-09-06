@@ -160,13 +160,5 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a5/FNFever_Banner.png/revision/latest',
     difficulty: 'Normal',
     songs: 20,
-  },
-  {
-    id: 'smoke-em-out-struggle',
-    title: 'Smoke \'Em Out Struggle',
-    description: 'Face off against Garcello, a heavy smoker.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/0/07/GarcelloModBanner.png/revision/latest',
-    difficulty: 'Easy',
-    songs: 4,
   }
 ];
