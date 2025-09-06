@@ -141,9 +141,10 @@ export const mods: Mod[] = [
     id: 'holofunk',
     title: 'HoloFunk',
     description: 'Battle Hololive EN V-Tubers.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/d7/HoloFunk_Logo.png/revision/latest?cb=20220112101031',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/f/f0/HoloNight_Funkin_Banner.jpg/revision/latest?cb=20210617013629',
     difficulty: 'Normal',
     songs: 20,
+    gameUrl: 'https://fnf.run3.io/holofunk/2.2/',
   },
   {
     id: 'rewrite-round-2',
