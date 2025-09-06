@@ -167,7 +167,7 @@ export const mods: Mod[] = [
     id: 'vs-matt',
     title: 'V.S. Matt',
     description: 'Challenge Matt from Wii Sports.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/f/f9/Vs_Matt_Banner.png/revision/latest',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/6/69/606b35d5e501e.jpg/revision/latest/scale-to-width-down/536?cb=20210406052627',
     difficulty: 'Insane',
     songs: 5,
     gameUrl: 'https://run3.io/popgame/fnf/mattwii-2/?ddd',
