@@ -16,6 +16,8 @@ export function ModBrowser() {
   
   const { favorites, toggleFavorite, isLoaded } = useFavorites();
 
+  const featuredMods = ['entity', 'mid-fight-masses'];
+
   const filteredMods = useMemo(() => {
     let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : mods;
 
@@ -62,7 +64,7 @@ export function ModBrowser() {
               mod={mod}
               isFavorite={favorites.includes(mod.id)}
               onToggleFavorite={toggleFavorite}
-              className={cn(mod.id === 'entity' && 'lg:col-span-2')}
+              className={cn(featuredMods.includes(mod.id) && 'lg:col-span-2')}
             />
           ))}
         </div>

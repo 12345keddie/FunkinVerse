@@ -51,9 +51,10 @@ export const mods: Mod[] = [
     id: 'mid-fight-masses',
     title: 'Mid-Fight Masses',
     description: 'A full week mod with Sarvente.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/73/Sarvente_and_Ruv_in_MFM.png/revision/latest?cb=20210403212818',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a7/Midfight_Masses_Update_Banner.jpg/revision/latest/scale-to-width-down/536?cb=20210327100359',
     difficulty: 'Hard',
     songs: 4,
+    gameUrl: 'https://fnf.run3.io/midfight/2/',
   },
   {
     id: 'vs-tabi',
