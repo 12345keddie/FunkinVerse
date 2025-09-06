@@ -152,6 +152,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/3e/Shaggyupdate.png/revision/latest?cb=20220118103721',
     difficulty: 'Insane',
     songs: 7,
+    gameUrl: 'https://fnf.run3.io/shaggy-pe/1.25/',
   },
   {
     id: 'shaggy-x-matt',
