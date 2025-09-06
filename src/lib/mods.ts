@@ -215,7 +215,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/31/MattWiik100GameBanana.jpg/revision/latest/scale-to-width-down/536?cb=20210929191310',
     difficulty: 'Insane',
     songs: 1,
-    gameUrl: 'https://fnf.kdata1.com/wiik-100/1/',
+    gameUrl: 'https://fnf.kdata1.com/matt-wiik-100/1/',
   },
   {
     id: 'friday-night-fever',
