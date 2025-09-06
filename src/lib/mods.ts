@@ -310,7 +310,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/16/Sprunkinthumnail.jpg/revision/latest/scale-to-width-down/1000?cb=20241015225512',
     difficulty: 'Normal',
     songs: 3,
-    gameUrl: 'https://fnf.kdata1.com/sprunkin/1/',
+    gameUrl: 'https://fnf.kdata1.com/2024/sprunki-sprunkin/1/',
   }
 ];
 
