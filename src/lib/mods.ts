@@ -112,11 +112,12 @@ export const mods: Mod[] = [
   },
   {
     id: 'doki-doki-takeover',
-    title: 'Doki Doki Takeover!',
+    title: 'Doki Doki Takeover Plus',
     description: 'The DDLC literature club takes over.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/30/DDTO_Banner.png/revision/latest?cb=20210815190011',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/4/44/DDTO%2BBanner.jpg/revision/latest/scale-to-width-down/1000?cb=20230318160553',
     difficulty: 'Normal',
     songs: 8,
+    gameUrl: 'https://kdata1.com/5000/2025/doki-doki-takeover-ddlc/',
   },
   {
     id: 'vs-impostor',
