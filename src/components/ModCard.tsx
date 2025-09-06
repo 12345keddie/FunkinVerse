@@ -13,11 +13,12 @@ interface ModCardProps {
   mod: Mod;
   isFavorite: boolean;
   onToggleFavorite: (modId: string) => void;
+  className?: string;
 }
 
-export function ModCard({ mod, isFavorite, onToggleFavorite }: ModCardProps) {
+export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCardProps) {
   return (
-    <Card className="bg-white/5 border-white/10 text-white overflow-hidden transform hover:scale-105 transition-transform duration-300 group shadow-lg hover:shadow-primary/20 flex flex-col">
+    <Card className={cn("bg-white/5 border-white/10 text-white overflow-hidden transform hover:scale-105 transition-transform duration-300 group shadow-lg hover:shadow-primary/20 flex flex-col", className)}>
       <CardHeader className="p-0">
         <div className="relative w-full aspect-video overflow-hidden">
           <Image

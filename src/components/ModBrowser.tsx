@@ -6,6 +6,7 @@ import { useFavorites } from '@/hooks/use-favorites';
 import { SearchAndFilter } from './SearchAndFilter';
 import { ModCard } from './ModCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { cn } from '@/lib/utils';
 
 export function ModBrowser() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -61,6 +62,7 @@ export function ModBrowser() {
               mod={mod}
               isFavorite={favorites.includes(mod.id)}
               onToggleFavorite={toggleFavorite}
+              className={cn(mod.id === 'entity' && 'lg:col-span-2')}
             />
           ))}
         </div>
