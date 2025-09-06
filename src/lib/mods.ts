@@ -149,7 +149,7 @@ export const mods: Mod[] = [
     id: 'vs-shaggy',
     title: 'V.S. Shaggy',
     description: 'Battle the legendary Shaggy Rogers.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/3e/Shaggyupdate.png/revision/latest?cb=20220118103721',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/3e/Shaggyupdate.png/revision/latest',
     difficulty: 'Insane',
     songs: 7,
     gameUrl: 'https://fnf.run3.io/shaggy-pe/1.25/',
@@ -189,6 +189,14 @@ export const mods: Mod[] = [
     difficulty: 'Insane',
     songs: 4,
     gameUrl: 'https://fnf.run3.io/matt-wiik-4-fanmade/1/',
+  },
+  {
+    id: 'vs-matt-wiik4-rozebud',
+    title: 'V.S. Matt - Wiik 4 (Rozebud)',
+    description: 'Rozebud\'s take on the Wiik 4 challenge.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/18/WF4GBBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230502145931',
+    difficulty: 'Insane',
+    songs: 1,
   },
   {
     id: 'matt-voiid-chronicles',
