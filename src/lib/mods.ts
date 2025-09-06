@@ -306,7 +306,7 @@ export const mods: Mod[] = [
   {
     id: 'sprunkin',
     title: 'Sprunkin\'!',
-    description: 'A SpongeBob SquarePants themed mod that\'s ready for fun.',
+    description: "Only for the Brainrotted",
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/658b451a25752.jpg',
     difficulty: 'Normal',
     songs: 3,
