@@ -121,7 +121,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/e/ed/Indie_Cross_New_Banner.png/revision/latest?cb=20220415010428',
     difficulty: 'Insane',
     songs: 22,
-    gameUrl: undefined,
+    gameUrl: 'https://gamaverse.com/c/f/g/fnf-indie-cross-vs-cuphead-sans-bendy/index.html',
   },
   {
     id: 'doki-doki-takeover',
