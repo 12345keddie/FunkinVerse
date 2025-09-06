@@ -41,7 +41,7 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
           </Badge>
           <Badge variant="secondary" className="bg-purple-500/20 text-purple-400 border-purple-400/50">
             <Music className="w-3 h-3 mr-1" />
-            {mod.songs} Songs
+            {mod.songs} {mod.songs === 1 ? 'Song' : 'Songs'}
           </Badge>
         </div>
       </CardContent>
