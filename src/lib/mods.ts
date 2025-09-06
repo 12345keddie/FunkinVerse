@@ -85,11 +85,12 @@ export const mods: Mod[] = [
   },
   {
     id: 'starlight-mayhem',
-    title: 'Starlight Mayhem',
+    title: 'Starlight Mayhem Rebooted',
     description: 'Rock out against CJ and his band.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/c/c3/StarlightBanner.png/revision/latest?cb=20210512034057',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/c/cf/StarlightMayhemRebootedBanner.jpeg/revision/latest/scale-to-width-down/1000?cb=20211222071757',
     difficulty: 'Normal',
     songs: 3,
+    gameUrl: 'https://fnf.kdata1.com/starlight-mayhem-rebooted/1.5/?D434d3',
   },
   {
     id: 'vs-kapi',
