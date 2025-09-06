@@ -114,7 +114,7 @@ export const mods: Mod[] = [
   {
     id: 'rewrite-round-2',
     title: 'Rewrite: Round 2',
-    description: 'Face Rewrite, a powerful code-altering EXE.',
+    description: 'Face a powerful code-altering EXE.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/684981c1d25d1.jpg',
     difficulty: 'Insane',
     songs: 4,
@@ -138,12 +138,12 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/dave-bambi/32/',
   },
   {
-    id: 'vs-agoti',
-    title: 'V.S. AGOTI',
-    description: 'Face off against AGOTI, a screen demon.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/71/Vsagoti.png/revision/latest',
+    id: 'entity',
+    title: 'Friday Night Funkin\' Entity',
+    description: 'A huge mod featuring AGOTI.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/0/03/Entity_Promo_Art.png/revision/latest?cb=20210815191023',
     difficulty: 'Hard',
-    songs: 3,
+    songs: 4,
   },
   {
     id: 'vs-shaggy',
