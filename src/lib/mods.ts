@@ -149,7 +149,7 @@ export const mods: Mod[] = [
     id: 'vs-shaggy',
     title: 'V.S. Shaggy',
     description: 'Battle the legendary Shaggy Rogers.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/3e/Shaggyupdate.png/revision/latest',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/3/3e/Shaggyupdate.png/revision/latest/scale-to-width-down/536?cb=20220118103721',
     difficulty: 'Insane',
     songs: 7,
     gameUrl: 'https://fnf.run3.io/shaggy-pe/1.25/',
@@ -219,9 +219,9 @@ export const mods: Mod[] = [
   },
   {
     id: 'friday-night-fever',
-    title: 'Friday Night Fever',
+    title: 'Friday Night Fever: Frenzy',
     description: 'A massive full-game overhaul mod.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a5/FNFever_Banner.png/revision/latest',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/63d738694de37.jpg',
     difficulty: 'Normal',
     songs: 20,
   }
