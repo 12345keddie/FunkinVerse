@@ -88,6 +88,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/5/55/Kapi-arcade-showdown-banner.png/revision/latest?cb=20210524024449',
     difficulty: 'Normal',
     songs: 4,
+    gameUrl: 'https://fnf.kdata1.com/kapi-arcade-showdown/2/',
   },
   {
     id: 'indie-cross',
