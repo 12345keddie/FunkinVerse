@@ -28,7 +28,8 @@ export const mods: Mod[] = [
     description: 'The iconic mod\'s definitive edition.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/530-90_61f9bf6a4abea.jpg',
     difficulty: 'Hard',
-    songs: 5,
+    songs: 10,
+    bonusSongs: 7,
     gameUrl: 'https://fnf.kdata1.com/whitty-definitive-edition/1.5/',
   },
   {
