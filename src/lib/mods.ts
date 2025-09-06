@@ -224,5 +224,6 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/63d738694de37.jpg',
     difficulty: 'Normal',
     songs: 20,
+    gameUrl: 'https://fnf.kdata1.com/fever/1/',
   }
 ];
