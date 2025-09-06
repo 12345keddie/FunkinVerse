@@ -161,6 +161,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/d1/SxMGameJoltBanner2.png/revision/latest?cb=20230413220256',
     difficulty: 'Insane',
     songs: 9,
+    gameUrl: 'https://fnf.run3.io/shaggy-matt/1.5/',
   },
   {
     id: 'friday-night-fever',
