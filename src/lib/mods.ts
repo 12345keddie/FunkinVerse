@@ -265,7 +265,8 @@ export const mods: Mod[] = [
     description: 'An expansive Matt mod with new mechanics.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/74/VoiidNewBanner.jpg/revision/latest/scale-to-width-down/536?cb=20230812032443',
     difficulty: 'Insane',
-    songs: 6,
+    songs: 43,
+    bonusSongs: 38,
     gameUrl: 'https://fnf.kdata1.com/matt-voiid-sides/1/',
   },
   {
