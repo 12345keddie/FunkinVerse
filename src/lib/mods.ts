@@ -154,8 +154,8 @@ export const mods: Mod[] = [
     songs: 7,
   },
   {
-    id: 'shaggy-vs-matt',
-    title: 'Shaggy V.S. Matt',
+    id: 'shaggy-x-matt',
+    title: 'Shaggy x Matt',
     description: 'The ultimate showdown of power.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/d/d1/SxMGameJoltBanner2.png/revision/latest?cb=20230413220256',
     difficulty: 'Insane',
