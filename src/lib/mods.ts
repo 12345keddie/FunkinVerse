@@ -78,7 +78,7 @@ export const mods: Mod[] = [
     id: 'tabi-revival',
     title: 'Tabi Revival',
     description: 'A revival of the classic Tabi mod.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a0/62549a860885b.jpg/revision/latest/scale-to-width-down/185?cb=20220412051715',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a0/62549a860885b.jpg/revision/latest/scale-to-width-down/1000?cb=20220412051715',
     difficulty: 'Hard',
     songs: 3,
     gameUrl: 'https://fnf.kdata1.com/2025/tabi-revival/1/',
