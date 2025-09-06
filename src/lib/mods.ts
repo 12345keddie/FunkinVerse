@@ -164,6 +164,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.run3.io/shaggy-matt/1.5/',
   },
   {
+    id: 'vs-matt',
+    title: 'V.S. Matt',
+    description: 'Challenge Matt from Wii Sports.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/f/f9/Vs_Matt_Banner.png/revision/latest',
+    difficulty: 'Insane',
+    songs: 5,
+    gameUrl: 'https://fnf.kdata1.com/wii-funkin-vs-matt/2/',
+  },
+  {
     id: 'friday-night-fever',
     title: 'Friday Night Fever',
     description: 'A massive full-game overhaul mod.',
