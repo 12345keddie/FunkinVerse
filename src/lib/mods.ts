@@ -83,7 +83,7 @@ export const mods: Mod[] = [
   },
   {
     id: 'vs-kapi',
-    title: 'V.S. Kapi',
+    title: 'V.S. Kapi: Arcade Showdown',
     description: 'An arcade showdown with a cat-boy.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/5/55/Kapi-arcade-showdown-banner.png/revision/latest?cb=20210524024449',
     difficulty: 'Normal',
