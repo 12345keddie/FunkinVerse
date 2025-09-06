@@ -27,6 +27,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/60b7d8741ac99.jpg',
     difficulty: 'Insane',
     songs: 4,
+    gameUrl: 'https://fnf.run3.io/tricky2/4/',
   },
   {
     id: 'vs-hex',
