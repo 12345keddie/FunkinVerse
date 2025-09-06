@@ -19,7 +19,7 @@ export function ModCard({ mod, isFavorite, onToggleFavorite }: ModCardProps) {
   return (
     <Card className="bg-white/5 border-white/10 text-white overflow-hidden transform hover:scale-105 transition-transform duration-300 group shadow-lg hover:shadow-primary/20 flex flex-col">
       <CardHeader className="p-0">
-        <div className="relative w-full aspect-square overflow-hidden">
+        <div className="relative w-full aspect-video overflow-hidden">
           <Image
             src={mod.imageUrl}
             alt={mod.title}
