@@ -37,7 +37,7 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto py-8 px-6 flex flex-col">
-        <div className="flex justify-between items-center mb-4 gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-4">
           <h1 className="text-3xl font-headline font-bold text-primary">{mod.title}</h1>
           <div className="flex items-center gap-2">
             {mod.gameUrl && (
@@ -54,7 +54,7 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
             </Button>
           </div>
         </div>
-        <Card className="flex-grow bg-black/50 border-2 border-dashed border-primary/50 rounded-lg flex items-center justify-center text-center p-8 flex-col text-muted-foreground">
+        <Card className="flex-grow bg-black/50 border-2 border-dashed border-primary/50 rounded-lg flex items-center justify-center text-center p-4 md:p-8 flex-col text-muted-foreground">
           {mod.gameUrl ? (
             <div ref={gameContainerRef} className="w-full h-full flex items-center justify-center max-w-4xl bg-black rounded-md overflow-hidden shadow-2xl shadow-primary/20">
               {isClient ? (
@@ -82,7 +82,7 @@ export default function PlayModPage({ params }: { params: { modId: string } }) {
                   className="object-cover opacity-30"
                   data-ai-hint="gameplay screenshot"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center p-4">
                   <p className="text-xl backdrop-blur-sm bg-black/30 p-4 rounded-md">A playable version of "{mod.title}" is not available yet.</p>
                 </div>
               </div>
