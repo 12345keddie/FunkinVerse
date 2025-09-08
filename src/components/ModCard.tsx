@@ -26,7 +26,7 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
             src={mod.imageUrl}
             alt={mod.title}
             fill
-            className="object-cover group-hover:opacity-80 transition-opacity"
+            className={cn("object-cover group-hover:opacity-80 transition-opacity", mod.imagePosition)}
             data-ai-hint="game character"
           />
         </div>

@@ -9,6 +9,7 @@ export type Mod = {
   bonusSongs?: number;
   buildType?: string;
   gameUrl?: string;
+  imagePosition?: string;
 };
 
 export const mods: Mod[] = [
@@ -389,5 +390,8 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 1,
     gameUrl: 'https://fnf.kdata1.com/mario-bros/2/',
+    imagePosition: 'object-bottom',
   },
 ];
+
+    
