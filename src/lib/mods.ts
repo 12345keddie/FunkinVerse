@@ -371,5 +371,14 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 5,
     gameUrl: 'https://fnf.kdata1.com/2025/impostor-2025/15/',
-  }
+  },
+  {
+    id: 'vs-hatsune-miku',
+    title: 'V.S. Hatsune Miku',
+    description: 'Sing against the virtual pop star, Hatsune Miku.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/78/Miku_Week_2.jpg/revision/latest/scale-to-width-down/1000?cb=20210720175547',
+    difficulty: 'Normal',
+    songs: 4,
+    gameUrl: 'https://fnf.run3.io/miku/2/',
+  },
 ];
