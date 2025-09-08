@@ -381,4 +381,13 @@ export const mods: Mod[] = [
     songs: 4,
     gameUrl: 'https://fnf.run3.io/miku/2/',
   },
+  {
+    id: 'super-mario-bros-funk-mix-dx',
+    title: 'Super Mario Bros. Funk Mix DX',
+    description: 'A Super Mario themed mod for FNF.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/6233b194be1cd.jpg',
+    difficulty: 'Normal',
+    songs: 1,
+    gameUrl: 'https://fnf.kdata1.com/mario-bros/2/',
+  },
 ];
