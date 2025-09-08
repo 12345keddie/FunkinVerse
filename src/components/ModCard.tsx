@@ -21,7 +21,7 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
   return (
     <Card className={cn("bg-white/5 border-white/10 text-white overflow-hidden transform hover:scale-105 transition-transform duration-300 group shadow-lg hover:shadow-primary/20 flex flex-col", className)}>
       <CardHeader className="p-0">
-        <div className={cn("relative w-full overflow-hidden", featuredMods.includes(mod.id) ? 'aspect-square' : 'aspect-video')}>
+        <div className={cn("relative w-full overflow-hidden aspect-square")}>
           <Image
             src={mod.imageUrl}
             alt={mod.title}
