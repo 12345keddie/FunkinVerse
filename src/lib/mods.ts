@@ -42,6 +42,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.run3.io/tricky2/4/',
   },
   {
+    id: 'mid-fight-masses',
+    title: 'Mid-Fight Masses',
+    description: 'A full week mod with Sarvente.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a7/Midfight_Masses_Update_Banner.jpg/revision/latest/scale-to-width-down/536?cb=20210327100359',
+    difficulty: 'Hard',
+    songs: 4,
+    gameUrl: 'https://fnf.run3.io/midfight/2/',
+  },
+  {
     id: 'vs-matt',
     title: 'V.S. Matt',
     description: 'Challenge Matt from Wii Sports.',
@@ -69,6 +78,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.run3.io/tabi/5/',
   },
   {
+    id: 'hellchart-carol',
+    title: 'V.S. Hellchart Carol',
+    description: 'An extra challenging version of the Carol mod.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60b825fc6c0b4.jpg',
+    difficulty: 'Insane',
+    songs: 1,
+    gameUrl: 'https://fnf.run3.io/hellchart-carol/1/',
+  },
+  {
     id: 'vs-shaggy',
     title: 'V.S. Shaggy',
     description: 'Battle the legendary Shaggy Rogers.',
@@ -94,6 +112,15 @@ export const mods: Mod[] = [
     difficulty: 'Normal',
     songs: 3,
     gameUrl: 'https://fnf.run3.io/carol-and-whitty-date-week/1.1/',
+  },
+  {
+    id: 'vs-selever',
+    title: 'V.S. Selever',
+    description: "Face off against Sarvente's non-canon son.",
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/6/6f/VsSeleverThumbnail.png/revision/latest/scale-to-width-down/1000?cb=20210928225526',
+    difficulty: 'Hard',
+    songs: 3,
+    gameUrl: 'https://fnf.run3.io/selever-full-week/1/',
   },
   {
     id: 'vs-matt-wiik100',
@@ -159,15 +186,6 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/mario-ultra-rebooted/1/',
   },
   {
-    id: 'indie-cross',
-    title: 'Indie Cross',
-    description: 'An epic indie game crossover.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/e/ed/Indie_Cross_New_Banner.png/revision/latest?cb=20220415010428',
-    difficulty: 'Insane',
-    songs: 22,
-    gameUrl: 'https://kdata1.com/5000/2025/indiecross3/',
-  },
-  {
     id: 'tabi-revival',
     title: 'Tabi Revival',
     description: 'A revival of the classic Tabi mod.',
@@ -175,6 +193,15 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 3,
     gameUrl: 'https://fnf.kdata1.com/2025/tabi-revival/1/',
+  },
+  {
+    id: 'indie-cross',
+    title: 'Indie Cross',
+    description: 'An epic indie game crossover.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/e/ed/Indie_Cross_New_Banner.png/revision/latest?cb=20220415010428',
+    difficulty: 'Insane',
+    songs: 22,
+    gameUrl: 'https://kdata1.com/5000/2025/indiecross3/',
   },
   {
     id: 'hazy-river',
@@ -187,33 +214,6 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/hazy-river-vs-garcello-annie/1/',
   },
   {
-    id: 'mid-fight-masses',
-    title: 'Mid-Fight Masses',
-    description: 'A full week mod with Sarvente.',
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a7/Midfight_Masses_Update_Banner.jpg/revision/latest/scale-to-width-down/536?cb=20210327100359',
-    difficulty: 'Hard',
-    songs: 4,
-    gameUrl: 'https://fnf.run3.io/midfight/2/',
-  },
-  {
-    id: 'hellchart-carol',
-    title: 'V.S. Hellchart Carol',
-    description: 'An extra challenging version of the Carol mod.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/60b825fc6c0b4.jpg',
-    difficulty: 'Insane',
-    songs: 1,
-    gameUrl: 'https://fnf.run3.io/hellchart-carol/1/',
-  },
-  {
-    id: 'vs-selever',
-    title: 'V.S. Selever',
-    description: "Face off against Sarvente's non-canon son.",
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/6/6f/VsSeleverThumbnail.png/revision/latest/scale-to-width-down/1000?cb=20210928225526',
-    difficulty: 'Hard',
-    songs: 3,
-    gameUrl: 'https://fnf.run3.io/selever-full-week/1/',
-  },
-  {
     id: 'dave-and-bambi',
     title: 'Dave & Bambi',
     description: 'A unique mod with a 3D art style.',
@@ -221,6 +221,15 @@ export const mods: Mod[] = [
     difficulty: 'Insane',
     songs: 32,
     gameUrl: 'https://fnf.kdata1.com/dave-bambi/32/',
+  },
+  {
+    id: 'fnf-piggyfied',
+    title: 'FNF: Piggyfied',
+    description: 'A mod featuring Piggy from the popular Roblox game.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/6365a043bf1a1.jpg',
+    difficulty: 'Normal',
+    songs: 1,
+    gameUrl: 'https://fnf.kdata1.com/piggyfied-vs-roblox-piggy/1.1/',
   },
   {
     id: 'vs-rainbow-friends',
@@ -363,7 +372,3 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/2025/impostor-2025/15/',
   }
 ];
-
-    
-    
-
