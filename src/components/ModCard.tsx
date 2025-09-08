@@ -21,12 +21,12 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
   return (
     <Card className={cn("bg-white/5 border-white/10 text-white overflow-hidden transform hover:scale-105 transition-transform duration-300 group shadow-lg hover:shadow-primary/20 flex flex-col", className)}>
       <CardHeader className="p-0">
-        <div className={cn("relative w-full overflow-hidden aspect-video")}>
+        <div className={cn("relative w-full overflow-hidden h-40")}>
           <Image
             src={mod.imageUrl}
             alt={mod.title}
             fill
-            className={cn("object-cover group-hover:opacity-80 transition-opacity", mod.imagePosition)}
+            className={cn("object-contain group-hover:opacity-80 transition-opacity", mod.imagePosition)}
             data-ai-hint="game character"
           />
         </div>
@@ -64,5 +64,3 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
     </Card>
   );
 }
-
-    
