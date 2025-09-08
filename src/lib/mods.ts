@@ -227,8 +227,9 @@ export const mods: Mod[] = [
     title: 'FNF: Piggyfied',
     description: 'A mod featuring Piggy from the popular Roblox game.',
     imageUrl: 'https://images.gamebanana.com/img/ss/mods/6365a043bf1a1.jpg',
-    difficulty: 'Normal',
-    songs: 1,
+    difficulty: 'Hard',
+    songs: 3,
+    bonusSongs: 4,
     gameUrl: 'https://fnf.kdata1.com/piggyfied-vs-roblox-piggy/1.1/',
   },
   {
