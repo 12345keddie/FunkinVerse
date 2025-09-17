@@ -1,11 +1,12 @@
+
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, Fragment } from 'react';
 import { mods } from '@/lib/mods';
 import { useFavorites } from '@/hooks/use-favorites';
 import { SearchAndFilter } from './SearchAndFilter';
 import { ModCard } from './ModCard';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { cn } from '@/lib/utils';
 
 export function ModBrowser() {
@@ -19,7 +20,7 @@ export function ModBrowser() {
   const featuredMods = ['entity', 'mid-fight-masses'];
 
   const filteredMods = useMemo(() => {
-    let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : mods;
+    let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : [...mods].reverse();
 
     return currentMods.filter(mod => {
       const matchesSearch = mod.title.toLowerCase().includes(searchTerm.toLowerCase());
@@ -58,14 +59,22 @@ export function ModBrowser() {
       
       {filteredMods.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredMods.map(mod => (
-            <ModCard
-              key={mod.id}
-              mod={mod}
-              isFavorite={favorites.includes(mod.id)}
-              onToggleFavorite={toggleFavorite}
-              className={cn(featuredMods.includes(mod.id) && 'lg:col-span-2')}
-            />
+          {filteredMods.map((mod, index) => (
+            <Fragment key={mod.id}>
+              {index % 5 === 0 && (
+                <div className="col-span-full mt-8 mb-2">
+                  <h2 className="text-2xl font-headline font-bold text-primary tracking-tight border-b-2 border-primary/20 pb-2">
+                    {index === 0 ? "Newest Mods" : `More Mods`}
+                  </h2>
+                </div>
+              )}
+              <ModCard
+                mod={mod}
+                isFavorite={favorites.includes(mod.id)}
+                onToggleFavorite={toggleFavorite}
+                className={cn(featuredMods.includes(mod.id) && 'lg:col-span-2')}
+              />
+            </Fragment>
           ))}
         </div>
       ) : (
