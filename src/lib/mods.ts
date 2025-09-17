@@ -393,6 +393,15 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/mario-bros/2/',
     imagePosition: 'object-bottom',
   },
+  {
+    id: 'vs-huggy-wuggy',
+    title: 'V.S. Huggy Wuggy',
+    description: 'A spooky encounter with Huggy Wuggy from Poppy Playtime.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a7/HuggyGameJoltThumb.png/revision/latest/scale-to-width-down/1000?cb=20250218061201',
+    difficulty: 'Hard',
+    songs: 1,
+    gameUrl: 'https://kbhgames.com/game/friday-night-funkin-vs-huggy-wuggy-poppy-playtime',
+  },
 ];
 
     
