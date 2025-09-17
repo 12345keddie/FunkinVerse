@@ -401,7 +401,7 @@ export const mods: Mod[] = [
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a7/HuggyGameJoltThumb.png/revision/latest/scale-to-width-down/1000?cb=20250218061201',
     difficulty: 'Hard',
     songs: 1,
-    gameUrl: 'https://kbhgames.com/game/friday-night-funkin-vs-huggy-wuggy-poppy-playtime',
+    gameUrl: 'https://fnf.kdata1.com/huggy-wuggy/2.1/',
     recommendedBy: 'Brayden',
   },
 ];
