@@ -10,6 +10,7 @@ export type Mod = {
   buildType?: string;
   gameUrl?: string;
   imagePosition?: string;
+  recommendedBy?: string;
 };
 
 export const mods: Mod[] = [
@@ -401,7 +402,6 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 1,
     gameUrl: 'https://kbhgames.com/game/friday-night-funkin-vs-huggy-wuggy-poppy-playtime',
+    recommendedBy: 'Brayden',
   },
 ];
-
-    

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, Play, Music, BarChart, Star } from 'lucide-react';
+import { Heart, Play, Music, BarChart, Star, UserCheck } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -50,6 +50,12 @@ export function ModCard({ mod, isFavorite, onToggleFavorite, className }: ModCar
             </Badge>
           )}
         </div>
+        {mod.recommendedBy && (
+          <div className="mt-4 text-xs flex items-center text-gray-400">
+            <UserCheck className="w-3 h-3 mr-1.5 text-primary" />
+            <span>Recommended by: <span className="font-semibold text-gray-300">{mod.recommendedBy}</span></span>
+          </div>
+        )}
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between">
         <Button asChild size="sm" className="bg-primary hover:bg-primary/80 text-white font-bold">
