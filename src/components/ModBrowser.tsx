@@ -68,6 +68,13 @@ export function ModBrowser() {
                   </h2>
                 </div>
               )}
+              {index === 5 && (
+                 <div className="col-span-full mt-8 mb-2">
+                  <h2 className="text-2xl font-headline font-bold text-primary tracking-tight border-b-2 border-primary/20 pb-2">
+                    More Mods
+                  </h2>
+                </div>
+              )}
               <ModCard
                 mod={mod}
                 isFavorite={favorites.includes(mod.id)}
