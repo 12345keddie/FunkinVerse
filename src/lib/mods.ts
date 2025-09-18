@@ -22,7 +22,7 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 8,
     bonusSongs: 2,
-    gameUrl: 'https://fnf.kdata1.com/aflac/1/',
+    gameUrl: 'https://w8.snokido.com/games/html5/friday-night-funkin/aflac02/index.html',
   },
   {
     id: 'vs-sky',
@@ -415,3 +415,5 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/wii-funkin-wiik-4-fanmade/1/',
   },
 ];
+
+    
