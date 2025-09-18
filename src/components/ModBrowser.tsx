@@ -20,7 +20,7 @@ export function ModBrowser() {
   const featuredMods = ['entity', 'mid-fight-masses'];
 
   const filteredMods = useMemo(() => {
-    let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : [...mods].reverse();
+    let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : mods;
 
     return currentMods.filter(mod => {
       const matchesSearch = mod.title.toLowerCase().includes(searchTerm.toLowerCase());
