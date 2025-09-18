@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, Moon, Sun } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import {
   Sheet,
@@ -11,12 +11,30 @@ import {
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import { Switch } from './ui/switch';
+import { Label } from './ui/label';
 
 export function Header() {
   const isMobile = useIsMobile();
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const closeSheet = () => setIsSheetOpen(false);
+
+  const ThemeToggle = () => (
+    <div className="flex items-center gap-2">
+      <Label htmlFor="theme-switch" className="text-sm font-medium text-gray-300">
+        {theme === 'light' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        <span className="sr-only">Toggle theme</span>
+      </Label>
+      <Switch
+        id="theme-switch"
+        checked={theme === 'dark'}
+        onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+      />
+    </div>
+  );
 
   return (
     <header className="py-4 px-6 border-b border-white/10 sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
@@ -40,11 +58,15 @@ export function Header() {
                 <Link href="/recommendations" onClick={closeSheet} className="font-medium text-gray-300 hover:text-primary transition-colors">
                   AI Recommendations
                 </Link>
+                <div className="pt-4 border-t border-white/10 w-full">
+                  <ThemeToggle />
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
         ) : (
           <nav className="flex gap-6 items-center">
+            <ThemeToggle />
             <Link href="/" className="text-sm font-medium text-gray-300 hover:text-primary transition-colors">
               Browse Mods
             </Link>
