@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useMemo, Fragment } from 'react';
+import { useState, useMemo } from 'react';
 import { mods } from '@/lib/mods';
 import { useFavorites } from '@/hooks/use-favorites';
 import { SearchAndFilter } from './SearchAndFilter';
@@ -59,29 +59,14 @@ export function ModBrowser() {
       
       {filteredMods.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredMods.map((mod, index) => (
-            <Fragment key={mod.id}>
-              {index === 0 && (
-                <div className="col-span-full mt-8 mb-2">
-                  <h2 className="text-2xl font-headline font-bold text-primary tracking-tight border-b-2 border-primary/20 pb-2">
-                    Newest Mods
-                  </h2>
-                </div>
-              )}
-              {index === 5 && (
-                <div className="col-span-full mt-8 mb-2">
-                  <h2 className="text-2xl font-headline font-bold text-primary tracking-tight border-b-2 border-primary/20 pb-2">
-                    More Mods
-                  </h2>
-                </div>
-              )}
-              <ModCard
-                mod={mod}
-                isFavorite={favorites.includes(mod.id)}
-                onToggleFavorite={toggleFavorite}
-                className={cn(featuredMods.includes(mod.id) && 'lg:col-span-2')}
-              />
-            </Fragment>
+          {filteredMods.map((mod) => (
+            <ModCard
+              key={mod.id}
+              mod={mod}
+              isFavorite={favorites.includes(mod.id)}
+              onToggleFavorite={toggleFavorite}
+              className={cn(featuredMods.includes(mod.id) && 'lg:col-span-2')}
+            />
           ))}
         </div>
       ) : (
