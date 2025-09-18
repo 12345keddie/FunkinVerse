@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Gamepad2, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import {
   Sheet,
@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export function Header() {
   const isMobile = useIsMobile();
@@ -21,7 +22,7 @@ export function Header() {
     <header className="py-4 px-6 border-b border-white/10 sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-          <Gamepad2 className="w-8 h-8" />
+          <Image src="/funkinlogo.png" alt="FunkinVerse Logo" width={32} height={32} />
           <span className="font-headline">FunkinVerse</span>
         </Link>
         {isMobile ? (
