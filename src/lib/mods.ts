@@ -17,7 +17,7 @@ export const mods: Mod[] = [
   {
     id: 'vs-aflac',
     title: 'V.S. Aflac',
-    description: 'Battle against the iconic Aflac Duck in this surprising crossover mod.',
+    description: "In this joke mod, the Aflac Duck is furious that his company doesn't cover all expenses and decides to take his anger out on Boyfriend in a rap battle.",
     imageUrl: 'https://images.gamebanana.com/img/ss/wips/61a6d0f52683d.jpg',
     difficulty: 'Hard',
     songs: 8,
