@@ -10,8 +10,8 @@ import { ArrowLeft, Expand, Loader } from 'lucide-react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
-export default function PlayModPage({ params }: { params: { modId: string } }) {
-  const modId = params.modId;
+export default function PlayModPage({ params }: { params: Promise<{ modId: string }> }) {
+  const { modId } = use(params);
   const mod = mods.find(m => m.id === modId);
   const gameContainerRef = useRef<HTMLDivElement>(null);
   const [isClient, setIsClient] = useState(false);
