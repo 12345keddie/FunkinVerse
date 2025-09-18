@@ -15,6 +15,15 @@ export type Mod = {
 
 export const mods: Mod[] = [
   {
+    id: 'vs-sky',
+    title: 'V.S. Sky',
+    description: 'Sing against the Boyfriend-obsessed fangirl, Sky.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/642f3dd9ebfde.jpg',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.run3.io/sky/1.1/',
+  },
+  {
     id: 'vs-whitty',
     title: 'V.S. Whitty',
     description: 'Face off against the short-fused rock star, Whitty.',
