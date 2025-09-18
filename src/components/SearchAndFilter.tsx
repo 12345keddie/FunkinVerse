@@ -11,6 +11,8 @@ interface SearchAndFilterProps {
   setDifficulty: (difficulty: string) => void;
   songCount: string;
   setSongCount: (count: string) => void;
+  sortBy: string;
+  setSortBy: (sort: string) => void;
 }
 
 export function SearchAndFilter({
@@ -20,6 +22,8 @@ export function SearchAndFilter({
   setDifficulty,
   songCount,
   setSongCount,
+  sortBy,
+  setSortBy,
 }: SearchAndFilterProps) {
   return (
     <div className="flex gap-4 flex-wrap w-full md:w-auto justify-center md:justify-end">
@@ -33,6 +37,19 @@ export function SearchAndFilter({
           onChange={e => setSearchTerm(e.target.value)}
         />
       </div>
+      <Select value={sortBy} onValueChange={setSortBy}>
+        <SelectTrigger className="w-full sm:w-[180px] bg-white/5 border-white/10">
+          <SelectValue placeholder="Sort by" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="newest">Sort by: Newest</SelectItem>
+          <SelectItem value="oldest">Sort by: Oldest</SelectItem>
+          <SelectItem value="title-asc">Sort by: Title (A-Z)</SelectItem>
+          <SelectItem value="title-desc">Sort by: Title (Z-A)</SelectItem>
+          <SelectItem value="difficulty-asc">Sort by: Difficulty (Easy-Insane)</SelectItem>
+          <SelectItem value="difficulty-desc">Sort by: Difficulty (Insane-Easy)</SelectItem>
+        </SelectContent>
+      </Select>
       <Select value={difficulty} onValueChange={setDifficulty}>
         <SelectTrigger className="w-full sm:w-[180px] bg-white/5 border-white/10">
           <SelectValue placeholder="Filter by difficulty" />

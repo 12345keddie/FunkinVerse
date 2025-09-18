@@ -8,11 +8,20 @@ import { SearchAndFilter } from './SearchAndFilter';
 import { ModCard } from './ModCard';
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { cn } from '@/lib/utils';
+import type { Mod } from '@/lib/mods';
+
+const difficultyOrder: { [key in Mod['difficulty']]: number } = {
+  'Easy': 1,
+  'Normal': 2,
+  'Hard': 3,
+  'Insane': 4,
+};
 
 export function ModBrowser() {
   const [searchTerm, setSearchTerm] = useState('');
   const [difficulty, setDifficulty] = useState('all');
   const [songCount, setSongCount] = useState('all');
+  const [sortBy, setSortBy] = useState('newest');
   const [activeTab, setActiveTab] = useState('all');
   
   const { favorites, toggleFavorite, isLoaded } = useFavorites();
@@ -20,9 +29,9 @@ export function ModBrowser() {
   const featuredMods = ['entity', 'mid-fight-masses'];
 
   const filteredMods = useMemo(() => {
-    let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : mods;
+    let currentMods = activeTab === 'favorites' ? mods.filter(mod => favorites.includes(mod.id)) : [...mods];
 
-    return currentMods.filter(mod => {
+    const filtered = currentMods.filter(mod => {
       const matchesSearch = mod.title.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesDifficulty = difficulty === 'all' || mod.difficulty === difficulty;
       const matchesSongCount = songCount === 'all' || 
@@ -32,7 +41,24 @@ export function ModBrowser() {
       
       return matchesSearch && matchesDifficulty && matchesSongCount;
     });
-  }, [searchTerm, difficulty, songCount, favorites, activeTab]);
+
+    switch (sortBy) {
+      case 'oldest':
+        return filtered.reverse();
+      case 'title-asc':
+        return filtered.sort((a, b) => a.title.localeCompare(b.title));
+      case 'title-desc':
+        return filtered.sort((a, b) => b.title.localeCompare(a.title));
+      case 'difficulty-asc':
+        return filtered.sort((a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty]);
+      case 'difficulty-desc':
+        return filtered.sort((a, b) => difficultyOrder[b.difficulty] - difficultyOrder[a.difficulty]);
+      case 'newest':
+      default:
+        return filtered;
+    }
+
+  }, [searchTerm, difficulty, songCount, favorites, activeTab, sortBy]);
 
   if (!isLoaded) {
     return <div className="text-center p-10">Loading mods...</div>;
@@ -54,6 +80,8 @@ export function ModBrowser() {
           setDifficulty={setDifficulty}
           songCount={songCount}
           setSongCount={setSongCount}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
         />
       </div>
       
