@@ -9,7 +9,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { Switch } from './ui/switch';
@@ -18,23 +18,34 @@ import { Label } from './ui/label';
 export function Header() {
   const isMobile = useIsMobile();
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const closeSheet = () => setIsSheetOpen(false);
 
-  const ThemeToggle = () => (
-    <div className="flex items-center gap-2">
-      <Label htmlFor="theme-switch" className="text-sm font-medium text-gray-300">
-        {theme === 'light' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-        <span className="sr-only">Toggle theme</span>
-      </Label>
-      <Switch
-        id="theme-switch"
-        checked={theme === 'dark'}
-        onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
-      />
-    </div>
-  );
+  const ThemeToggle = () => {
+    if (!isMounted) {
+      return null;
+    }
+
+    return (
+      <div className="flex items-center gap-2">
+        <Label htmlFor="theme-switch" className="text-sm font-medium text-gray-300">
+          {theme === 'light' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          <span className="sr-only">Toggle theme</span>
+        </Label>
+        <Switch
+          id="theme-switch"
+          checked={theme === 'dark'}
+          onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+        />
+      </div>
+    );
+  };
 
   return (
     <header className="py-4 px-6 border-b border-white/10 sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
