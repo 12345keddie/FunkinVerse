@@ -15,6 +15,15 @@ export type Mod = {
 
 export const mods: Mod[] = [
   {
+    id: 'vs-sky',
+    title: 'V.S. Sky',
+    description: 'Sing against the Boyfriend-obsessed fangirl, Sky.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/642f3dd9ebfde.jpg',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.run3.io/sky/1.1/',
+  },
+  {
     id: 'vs-hatsune-miku',
     title: 'V.S. Hatsune Miku',
     description: 'Sing against the virtual pop star, Hatsune Miku.',
@@ -40,7 +49,7 @@ export const mods: Mod[] = [
     description: 'A spooky encounter with Huggy Wuggy from Poppy Playtime.',
     imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/a7/HuggyGameJoltThumb.png/revision/latest/scale-to-width-down/1000?cb=20250218061201',
     difficulty: 'Hard',
-    songs: 1,
+    songs: 2,
     gameUrl: 'https://fnf.kdata1.com/huggy-wuggy/2.1/',
     recommendedBy: 'Brayden',
   },
@@ -63,15 +72,6 @@ export const mods: Mod[] = [
     songs: 43,
     bonusSongs: 38,
     gameUrl: 'https://fnf.kdata1.com/matt-voiid-sides/1/',
-  },
-  {
-    id: 'vs-sky',
-    title: 'V.S. Sky',
-    description: 'Sing against the Boyfriend-obsessed fangirl, Sky.',
-    imageUrl: 'https://images.gamebanana.com/img/ss/mods/642f3dd9ebfde.jpg',
-    difficulty: 'Normal',
-    songs: 3,
-    gameUrl: 'https://fnf.run3.io/sky/1.1/',
   },
   {
     id: 'vs-whitty',
