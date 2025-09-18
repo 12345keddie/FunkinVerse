@@ -357,15 +357,6 @@ export const mods: Mod[] = [
     gameUrl: 'https://fnf.kdata1.com/fever/1/',
   },
   {
-    id: 'sprunkin',
-    title: 'Sprunkin\'!',
-    description: "Only for the Brainrotted",
-    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/1/16/Sprunkinthumnail.jpg/revision/latest/scale-to-width-down/1000?cb=20241015225512',
-    difficulty: 'Normal',
-    songs: 3,
-    gameUrl: 'https://fnf.kdata1.com/2024/sprunki-sprunkin/1/',
-  },
-  {
     id: 'vs-impostor-2025',
     title: 'V.S. Impostor (2025)',
     description: 'The 2025 edition of the Among Us FNF mod.',

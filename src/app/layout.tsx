@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'FunkinVerse',
   description: 'A vibrant web-based platform for playing Friday Night Funkin\' mods directly in the browser.',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
