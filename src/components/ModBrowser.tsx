@@ -61,17 +61,10 @@ export function ModBrowser() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredMods.map((mod, index) => (
             <Fragment key={mod.id}>
-              {index === 0 && (
+              {index % 5 === 0 && (
                 <div className="col-span-full mt-8 mb-2">
                   <h2 className="text-2xl font-headline font-bold text-primary tracking-tight border-b-2 border-primary/20 pb-2">
-                    Newest Mods
-                  </h2>
-                </div>
-              )}
-              {index === 5 && (
-                 <div className="col-span-full mt-8 mb-2">
-                  <h2 className="text-2xl font-headline font-bold text-primary tracking-tight border-b-2 border-primary/20 pb-2">
-                    All Mods
+                    {index === 0 ? 'Newest Mods' : 'More Mods'}
                   </h2>
                 </div>
               )}
