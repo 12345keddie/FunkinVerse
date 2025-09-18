@@ -22,8 +22,7 @@ export function Header() {
     <header className="py-4 px-6 border-b border-white/10 sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary hover:text-primary/90 transition-colors">
-          <Image src="/funkinlogo.png" alt="FunkinVerse Logo" width={32} height={32} />
-          <span className="font-headline">FunkinVerse</span>
+          <Image src="/funkinlogo.png" alt="FunkinVerse Logo" width={180} height={40} className="object-contain" />
         </Link>
         {isMobile ? (
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
