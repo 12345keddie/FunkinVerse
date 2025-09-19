@@ -15,6 +15,15 @@ export type Mod = {
 
 export const mods: Mod[] = [
   {
+    id: 'computerized-conflict',
+    title: 'FNF: Computerized Conflict',
+    description: 'Boyfriend finds himself in a digital duel against a skilled animator in this high-tech showdown.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/6505a25aaa37a.jpg',
+    difficulty: 'Hard',
+    songs: 4,
+    gameUrl: 'https://fnf.kdata1.com/animator-vs-animation/1.1/',
+  },
+  {
     id: 'animation-vs-fnf',
     title: 'Animation V.S. FNF',
     description: 'Boyfriend takes on the world of animation in this creative crossover mod, battling iconic cartoon characters.',
