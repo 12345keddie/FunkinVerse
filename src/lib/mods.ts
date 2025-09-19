@@ -22,7 +22,7 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 8,
     bonusSongs: 2,
-    gameUrl: 'https://gamaverse.com/c/f/g/fnf-vs-aflac-friday-night-funkin/',
+    gameUrl: 'https://game.fnfhub.net/24921/',
   },
   {
     id: 'vs-sky',
