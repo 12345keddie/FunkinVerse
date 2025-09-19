@@ -15,6 +15,15 @@ export type Mod = {
 
 export const mods: Mod[] = [
   {
+    id: 'animation-vs-fnf',
+    title: 'Animation V.S. FNF',
+    description: 'Boyfriend takes on the world of animation in this creative crossover mod, battling iconic cartoon characters.',
+    imageUrl: 'https://images.gamebanana.com/img/ss/mods/66c68263e7869.jpg',
+    difficulty: 'Normal',
+    songs: 3,
+    gameUrl: 'https://fnf.kdata1.com/animation/3/',
+  },
+  {
     id: 'super-mario-bros-funkers',
     title: 'Super Mario Bros. Funkers',
     description: 'A fun-filled FNF mod where Boyfriend takes on the iconic characters of the Super Mario universe.',
