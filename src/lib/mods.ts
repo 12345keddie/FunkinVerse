@@ -22,7 +22,7 @@ export const mods: Mod[] = [
     difficulty: 'Hard',
     songs: 8,
     bonusSongs: 2,
-    gameUrl: 'https://game.fnfhub.net/24921/',
+    gameUrl: 'https://files.fnf.wtf/file/h5games/onlinegames/games/2022/q4/friday-night-funkin-vs-aflac-remastered/index.html',
   },
   {
     id: 'vs-sky',
