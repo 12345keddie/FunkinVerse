@@ -15,14 +15,13 @@ export type Mod = {
 
 export const mods: Mod[] = [
   {
-    id: 'vs-aflac',
-    title: 'V.S. Aflac Remastered',
-    description: "BF joined a Minecraft Server. What could happen?",
-    imageUrl: 'https://images.gamebanana.com/img/ss/wips/61a6d0f52683d.jpg',
-    difficulty: 'Hard',
-    songs: 8,
-    bonusSongs: 2,
-    gameUrl: 'https://files.fnf.wtf/file/h5games/onlinegames/games/2022/q4/friday-night-funkin-vs-aflac-remastered/index.html',
+    id: 'super-mario-bros-funkers',
+    title: 'Super Mario Bros. Funkers',
+    description: 'A fun-filled FNF mod where Boyfriend takes on the iconic characters of the Super Mario universe.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/a/ac/64e143fe60c7e.jpg/revision/latest/scale-to-width-down/1000?cb=20230821212920',
+    difficulty: 'Normal',
+    songs: 5,
+    gameUrl: 'https://fnf.kdata1.com/mario-bros-funkers/1/',
   },
   {
     id: 'vs-sky',
