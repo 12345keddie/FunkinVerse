@@ -15,6 +15,15 @@ export type Mod = {
 
 export const mods: Mod[] = [
   {
+    id: 'vs-henry-stickmin',
+    title: 'V.S. Henry Stickmin',
+    description: 'Boyfriend faces off against the infamous, luck-prone stick figure, Henry Stickmin, in a week of chaotic rhythm battles.',
+    imageUrl: 'https://static.wikia.nocookie.net/fridaynightfunking/images/7/77/VsHenryV4Banner.jpg/revision/latest?cb=20240115012833',
+    difficulty: 'Hard',
+    songs: 4,
+    gameUrl: 'https://fnf.run3.io/henry/2/',
+  },
+  {
     id: 'computerized-conflict',
     title: 'FNF: Computerized Conflict',
     description: 'Boyfriend finds himself in a digital duel against a skilled animator in this high-tech showdown.',
