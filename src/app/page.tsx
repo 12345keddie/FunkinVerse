@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Header } from '@/components/Header';
+import Link from 'next/link';
 
 export default function ShutdownPage() {
   const [showMessage, setShowMessage] = useState(false);
@@ -44,7 +45,16 @@ export default function ShutdownPage() {
               This website is temporarily shutdown.
             </h1>
             <p className="text-muted-foreground text-lg">
-              Please come back later or play some Incredibox and ask Leo if you need any questions.
+              Please come back later or play some{' '}
+              <a
+                href="https://incredibox.com/demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline hover:text-primary/80"
+              >
+                Incredibox
+              </a>{' '}
+              and ask Leo if you need any questions.
             </p>
           </div>
         </div>
