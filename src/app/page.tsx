@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useRef, useEffect } from 'react';
@@ -50,7 +49,6 @@ export default function VideoPage() {
         src={`/${encodeURIComponent(videoFileName)}`}
         controls
         loop
-        muted // Muting is often required for autoplay to work
         className="w-full h-full object-cover"
         playsInline
         onClick={playVideo}
