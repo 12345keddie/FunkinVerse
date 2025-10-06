@@ -6,17 +6,15 @@ export default function VideoPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const videoFileName = "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4";
 
-  const playVideo = () => {
+  const playVideoWithSound = () => {
     const video = videoRef.current;
     if (video) {
-      // Try to enter fullscreen
+      video.muted = false;
       video.requestFullscreen().catch(err => {
         console.log("Could not activate full-screen mode: ", err);
       });
-      // Try to play the video
       video.play().catch(error => {
-        console.log("Autoplay was prevented: ", error);
-        // Autoplay was prevented, show a play button or prompt the user
+        console.log("Playback was prevented: ", error);
       });
     }
   };
@@ -28,7 +26,7 @@ export default function VideoPage() {
         console.log("Autoplay was prevented, waiting for user interaction.", error);
         
         const interactionHandler = () => {
-          playVideo();
+          playVideoWithSound();
           window.removeEventListener('click', interactionHandler);
           window.removeEventListener('keydown', interactionHandler);
         }
@@ -55,7 +53,7 @@ export default function VideoPage() {
         muted
         playsInline
         className="w-full h-full object-cover"
-        onClick={playVideo}
+        onClick={playVideoWithSound}
       >
         Your browser does not support the video tag.
       </video>
