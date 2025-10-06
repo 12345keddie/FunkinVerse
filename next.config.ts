@@ -42,12 +42,6 @@ const nextConfig: NextConfig = {
       }
     ],
   },
-  // Allow cross-origin requests in development
-  ...(process.env.NODE_ENV === 'development' && {
-    experimental: {
-      allowedDevOrigins: ['https://*.cloudworkstations.dev'],
-    },
-  }),
 };
 
 export default withPWA(nextConfig);
