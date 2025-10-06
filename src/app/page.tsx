@@ -1,64 +1,67 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { Header } from '@/components/Header';
-import Link from 'next/link';
+import { useRef, useEffect } from 'react';
 
-export default function ShutdownPage() {
-  const [showMessage, setShowMessage] = useState(false);
+export default function VideoPage() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoFileName = "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4";
+
+  const playVideo = () => {
+    const video = videoRef.current;
+    if (video) {
+      // Try to enter fullscreen
+      video.requestFullscreen().catch(err => {
+        console.log("Could not activate full-screen mode: ", err);
+      });
+      // Try to play the video
+      video.play().catch(error => {
+        console.log("Autoplay was prevented: ", error);
+        // Autoplay was prevented, show a play button or prompt the user
+      });
+    }
+  };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowMessage(true);
-    }, 1500); // Delay for the message to appear
+    // We add a small delay to ensure the component is fully mounted.
+    const timer = setTimeout(playVideo, 100);
 
-    return () => clearTimeout(timer);
+    // Try to play on first interaction if autoplay fails
+    const interactionHandler = () => {
+        playVideo();
+        window.removeEventListener('click', interactionHandler);
+        window.removeEventListener('keydown', interactionHandler);
+    }
+
+    window.addEventListener('click', interactionHandler);
+    window.addEventListener('keydown', interactionHandler);
+
+    return () => {
+        clearTimeout(timer);
+        window.removeEventListener('click', interactionHandler);
+        window.removeEventListener('keydown', interactionHandler);
+    };
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <Header />
-      <main className="flex-grow flex items-center justify-center">
-        <div className="text-center p-6 max-w-2xl mx-auto">
-          <div className={`transition-opacity duration-1000 ease-in-out ${showMessage ? 'opacity-0 h-0' : 'opacity-100'}`}>
-            <Image
-              src="/funkinlogo.png"
-              alt="FunkinVerse Logo"
-              width={400}
-              height={100}
-              className="object-contain mx-auto animate-pulse"
-              priority
-            />
-          </div>
-
-          <div className={`transition-opacity duration-1000 ease-in-out ${showMessage ? 'opacity-100' : 'opacity-0 h-0 invisible'}`}>
-             <Image
-              src="/funkinlogo.png"
-              alt="FunkinVerse Logo"
-              width={300}
-              height={75}
-              className="object-contain mx-auto mb-8"
-            />
-            <h1 className="text-3xl font-headline font-bold text-primary mb-4">
-              This website is temporarily shutdown.
-            </h1>
-            <p className="text-muted-foreground text-lg">
-              Please come back later or play some{' '}
-              <a
-                href="https://incredibox.com/demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline hover:text-primary/80"
-              >
-                Incredibox
-              </a>{' '}
-              and ask Leo if you need any questions.
-            </p>
-          </div>
+    <div className="min-h-screen bg-black flex items-center justify-center">
+      <video
+        ref={videoRef}
+        src={`/${encodeURIComponent(videoFileName)}`}
+        controls
+        loop
+        muted // Muting is often required for autoplay to work
+        className="w-full h-full object-cover"
+        playsInline
+        onClick={playVideo}
+      >
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white" style={{pointerEvents: 'none'}}>
+        <div className="text-center">
+            <h1 className="text-2xl font-bold">Click anywhere or press any key to play</h1>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
