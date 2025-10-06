@@ -22,24 +22,26 @@ export default function VideoPage() {
   };
 
   useEffect(() => {
-    // We add a small delay to ensure the component is fully mounted.
-    const timer = setTimeout(playVideo, 100);
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch(error => {
+        console.log("Autoplay was prevented, waiting for user interaction.", error);
+        
+        const interactionHandler = () => {
+          playVideo();
+          window.removeEventListener('click', interactionHandler);
+          window.removeEventListener('keydown', interactionHandler);
+        }
 
-    // Try to play on first interaction if autoplay fails
-    const interactionHandler = () => {
-        playVideo();
-        window.removeEventListener('click', interactionHandler);
-        window.removeEventListener('keydown', interactionHandler);
+        window.addEventListener('click', interactionHandler);
+        window.addEventListener('keydown', interactionHandler);
+
+        return () => {
+          window.removeEventListener('click', interactionHandler);
+          window.removeEventListener('keydown', interactionHandler);
+        };
+      });
     }
-
-    window.addEventListener('click', interactionHandler);
-    window.addEventListener('keydown', interactionHandler);
-
-    return () => {
-        clearTimeout(timer);
-        window.removeEventListener('click', interactionHandler);
-        window.removeEventListener('keydown', interactionHandler);
-    };
   }, []);
 
   return (
@@ -49,8 +51,10 @@ export default function VideoPage() {
         src={`/${encodeURIComponent(videoFileName)}`}
         controls
         loop
-        className="w-full h-full object-cover"
+        autoPlay
+        muted
         playsInline
+        className="w-full h-full object-cover"
         onClick={playVideo}
       >
         Your browser does not support the video tag.
