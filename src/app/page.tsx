@@ -1,36 +1,17 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { Header } from '@/components/Header';
+import { ModBrowser } from '@/components/ModBrowser';
 
-export default function VideoPage() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const videoFileName = "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4";
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      video.play().catch(error => {
-        console.log("Autoplay with sound was prevented by the browser.", error);
-      });
-      video.requestFullscreen().catch(err => {
-        console.log("Could not activate full-screen mode automatically.", err);
-      });
-    }
-  }, []);
-
+export default function Home() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <video
-        ref={videoRef}
-        src={`/${encodeURIComponent(videoFileName)}`}
-        controls
-        loop
-        autoPlay
-        playsInline
-        className="w-full h-full object-cover"
-      >
-        Your browser does not support the video tag.
-      </video>
+    <div className="min-h-screen bg-background text-foreground">
+      <Header />
+      <main className="container mx-auto py-8 px-6">
+        <h1 className="text-4xl font-headline font-bold text-center mb-2 text-primary tracking-tighter">Welcome to FunkinVerse</h1>
+        <p className="text-center text-muted-foreground mb-8">Browse and play the best Friday Night Funkin' mods, right in your browser.</p>
+        <ModBrowser />
+      </main>
     </div>
   );
 }
